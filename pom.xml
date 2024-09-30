@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.n3gd0r</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>commons</name>
 	<description>Common stuff for microservices</description>
 	<url/>
