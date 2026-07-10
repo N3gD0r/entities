@@ -5,12 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.n3gd0r</groupId>
     <artifactId>commons</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>commons</name>
     <description>Common stuff for my projects</description>
     <properties>
         <java.version>21</java.version>
-        <spring-data-jpa.version>4.1.0</spring-data-jpa.version>
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
     </properties>
     <dependencies>
