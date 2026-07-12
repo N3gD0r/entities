@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.n3gd0r</groupId>
     <artifactId>commons</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>commons</name>
     <description>Common stuff for my projects</description>
     <properties>

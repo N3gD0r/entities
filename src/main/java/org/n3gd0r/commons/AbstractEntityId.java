@@ -17,41 +17,41 @@ public class AbstractEntityId<TKey extends Serializable> implements Serializable
     protected AbstractEntityId() {
     }
 
-	protected AbstractEntityId(TKey id) {
-		this.id = id;
-	}
+    protected AbstractEntityId(TKey id) {
+        this.id = id;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
         boolean isEquals = false;
         if (this == obj) {
             isEquals = true;
         } else if (obj == null) {
             return false;
         } else if (obj.getClass().equals(getClass())) {
-            AbstractEntity<?> o = (AbstractEntity<?>) obj;
+            AbstractEntityId<?> o = (AbstractEntityId<?>) obj;
             isEquals = Objects.equals(getId(), o.getId());
         }
         return isEquals;
-	}
+    }
 
-	@Override
-	public int hashCode() {
+    @Override
+    public int hashCode() {
         return Objects.hash(getId());
-	}
+    }
 
-	@Override
-	public String toString() {
+    @Override
+    public String toString() {
         return String.format("%s[id=%s]", getClass().getSimpleName(), getId());
-	}
+    }
 
-	@Override
-	public String asString() {
-		return id.toString();
-	}
+    @Override
+    public String asString() {
+        return id.toString();
+    }
 
-	@Override
-	public TKey getId() {
-		return id;
-	}
+    @Override
+    public TKey getId() {
+        return id;
+    }
 }
