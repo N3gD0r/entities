@@ -11,7 +11,7 @@ import jakarta.persistence.MappedSuperclass;
  * @param <TKey> the id type that encapsulates
  */
 @MappedSuperclass
-public class AbstractEntityId<TKey extends Serializable> implements Serializable, EntityId<TKey> {
+public class AbstractEntityId<TKey extends Serializable> implements EntityId<TKey> {
     private TKey id;
 
     protected AbstractEntityId() {
@@ -42,7 +42,7 @@ public class AbstractEntityId<TKey extends Serializable> implements Serializable
 
     @Override
     public String toString() {
-        return String.format("%s[id=%s]", getClass().getSimpleName(), getId());
+        return "%s [id=%s]".formatted(getClass().getSimpleName(), getId());
     }
 
     @Override

@@ -49,6 +49,6 @@ public abstract class AbstractEntity<TKey extends EntityId<?>> implements Entity
 
     @Override
     public String toString() {
-        return String.format("%s[id=%s]", getClass().getSimpleName(), getId());
+        return "%s [id=%s]".formatted(getClass().getSimpleName(), getId());
     }
 }
